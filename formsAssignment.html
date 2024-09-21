@@ -7,26 +7,26 @@
 </head>
 <body>
     <h2>Employment Application</h2>
-    <hr style="border: 1px solid black;">
+    <hr>
     <p>Fill the form below accurately indicating your suitability to job applying for.</p>
     <form action="" method="POST">
         <div>
             <label for="Fname">First Name:</label>
-        <input type="text" name="Fname" id="Fname" placeholder="Chloe">
+        <input type="text" name="Fname" id="Fname" placeholder="Chloe" required>
         </div>
         <div>
             <label for="Lname">Last Name:</label>
-        <input type="text" name="Lname" id="Lname" placeholder="Williams">
+        <input type="text" name="Lname" id="Lname" placeholder="Williams" required>
         <div>
         </div>
         <label for="phone">Birth Date:</label>
-        <input type="date" name="bdate" id="bdate">
+        <input type="date" name="bdate" id="bdate" required>
         </div>
         <div>
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" placeholder="+234-705-389-2290">
+            <input type="tel" name="phone" id="phone" placeholder="+234-705-389-2290" required>
             <label for="email">Email Address:</label>
-            <input type="email" name="email" id="email" placeholder="chloewills@example.com">
+            <input type="email" name="email" id="email" placeholder="chloewills@example.com" required>
         </div>
         <div>
             <label>Gender</label><br>
@@ -37,11 +37,11 @@
         </div>
         <div>
             <label for="address1">Ressidential Address (Lagos Address Only)</label><br>
-            <input type="text" name="address1" id="address1" placeholder="Address line 1"><br>
+            <input type="text" name="address1" id="address1" placeholder="Address line 1" required><br>
             <input type="text" name="address2" id="address2" placeholder="Address line 2">
         </div>
-        <input type="text" name="city" id="city" placeholder="City">
-        <select name="region" id="region">
+        <input type="text" name="city" id="city" placeholder="City" required>
+        <select name="region" id="region" required>
             <option value="">Region</option>
             <option value="berger">Berger</option>
             <option value="ketu">Ketu</option>
@@ -66,7 +66,8 @@
         <p><strong>Describe your skills</strong></p>
         <textarea name="skills" id="skills" placeholder="Your Skills Here" rows="5" cols="50"></textarea>
         <p><strong>Training or Certification</strong></p>
-        <input type="file" name="file">
+        <input type="file" name="file"> <br><br>
+        <input type="submit" value="Send">
     </form>
 </body>
 </html>
