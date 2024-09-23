@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Application</title>
+</head>
+<body>
+    <h2>Employment Application</h2>
+    <hr>
+    <p>Fill the form below accurately indicating your suitability to job applying for.</p>
+    <form action="" method="POST">
+        <div>
+            <label for="Fname">First Name:</label>
+        <input type="text" name="Fname" id="Fname" placeholder="Chloe" required>
+        </div>
+        <div>
+            <label for="Lname">Last Name:</label>
+        <input type="text" name="Lname" id="Lname" placeholder="Williams" required>
+        <div>
+        </div>
+        <label for="phone">Birth Date:</label>
+        <input type="date" name="bdate" id="bdate" required>
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="+234-705-389-2290" required>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="chloewills@example.com" required>
+        </div>
+        <div>
+            <label>Gender</label><br>
+            <input type="radio" name="male" id="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="male" id="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="address1">Ressidential Address (Lagos Address Only)</label><br>
+            <input type="text" name="address1" id="address1" placeholder="Address line 1" required><br>
+            <input type="text" name="address2" id="address2" placeholder="Address line 2">
+        </div>
+        <input type="text" name="city" id="city" placeholder="City" required>
+        <select name="region" id="region" required>
+            <option value="">Region</option>
+            <option value="berger">Berger</option>
+            <option value="ketu">Ketu</option>
+            <option value="ikeja">Ikeja</option>
+            <option value="ikorodu">Ikorodu</option>
+        </select>
+        <p>How were you referred to us?<span> *</span></p>
+        <input type="checkbox">
+        <label for="newspaper">Newspaper</label><br>
+        <input type="checkbox">
+        <label for="fbk">Facebook</label><br>
+        <input type="checkbox">
+        <label for="tweet">Twitter</label><br>
+        <input type="checkbox">
+        <label for="linkedin">LinkendIn</label><br>
+        <input type="checkbox">
+        <label for="other">Other</label>
+        <input type="text" name="other" placeholder="Please specify">
+        <p>Upload Resume</p>
+        <input type="file" name="file" placeholder="Browse.." required>
+        <h3>Job Skills & Training</h3>
+        <p><strong>Describe your skills</strong></p>
+        <textarea name="skills" id="skills" placeholder="Your Skills Here" rows="5" cols="50" required></textarea>
+        <p><strong>Training or Certification</strong></p>
+        <input type="file" name="file" required><br><br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
